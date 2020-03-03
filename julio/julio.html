@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport:" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="julio.css" style="text/css">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <h1 class="toro"><a href="julio.html">Julio<span>Alvarez</a></h1>
+          <ul>
+
+            <!-- <li><a href="julio.html">Home</a></li>
+            <li><a href="images.html">Images-Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li> -->
+        </nav>
+
+
+      </div>
+      <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="content">
+        <h1>Julio's Proffessional Photography</h1>
+        <p>Want to add some life to your next party - contact us for a quote.  </p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+
+
+
+
+    </header>
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+  </body>
+</html>
